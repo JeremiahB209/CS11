@@ -1,0 +1,24 @@
+def add_numbers(a, b):
+    return a + b
+
+def subtract_numbers(a, b):
+    return a - b
+
+# Ask the user what they want to do
+operation = input("Do you want to do addition or subtraction? (add/sub): ")
+
+# Ask for the two numbers
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+# Perform the correct operation
+if operation == "add":
+    result = add_numbers(num1, num2)
+    print("The result of addition is:", result)
+
+elif operation == "sub":
+    result = subtract_numbers(num1, num2)
+    print("The result of subtraction is:", result)
+
+else:
+    print("Invalid choice. Please type 'add' or 'sub'.")
